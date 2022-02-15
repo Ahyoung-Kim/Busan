@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>예약 접수</title>
+	<style>
+		ul {
+			list-style:none;
+		}
+		li {
+			line-height:50px;
+		}
+		label {
+			width:60px;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<h1>예약 정보</h1>
+	<!--form 태그(폼 만들기)-->
+	<!--label 태그(폼 요소에 레이블 붙이기)-->
+	<!--
+		<label for="id 이름">레이블</label>
+		<input id="id 이름" 속성~>
+	-->
+	<!--input태그 type 속성: text, password, tel, email, url, submit ....-->
+	<form>
+		<ul>
+			<li>
+				<label for="r-name">이름</label>
+				<input type="text" id="r-name">
+			</li>
+			<li>
+				<label for="r-phone">휴대폰</label>
+				<input type="tel" id="r-phone">
+			</li>
+			<li>
+				<label for="r-email">이메일</label>
+				<input type="email" id="r-email">
+			</li>
+			<li>
+				<!--type(submit, button, reset)은 value로 버튼 이름 표시-->
+				<input type="submit" value="예약하기">
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

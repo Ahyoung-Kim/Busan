@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>프런트엔드 개발자 지원서</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+  </head>
+  <body>
+		<div id="container">
+			<h1>프런트엔드 개발자 지원서 </h1>
+			<p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+			<hr>
+			<form>
+				<!-- fieldset, legend 태그 : 폼 요소 그룹으로 묶기(네모 박스)
+					<fieldset>(네모 박스 틀)
+						<legend>틀 제목</legend>
+						...
+					</fieldset>
+				-->
+				<fieldset>
+					<legend>개인정보</legend>
+					<ul>
+						<li>
+							<label for="uname">이름</label>
+							<!--<input>태그의 속성: placeholder
+								-> 힌트 표시
+							-->
+							<input type="text" id="uname" placeholder="공백 없이 입력하세요">
+						</li>
+						<li>
+							<label for="tel1">연락처</label>
+							<input type="tel" id="tel1">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>지원 분야</legend>
+					<ul>
+						<li>
+							<!--input 태그의 value 속성 : 서버에 넘길 값-->
+							<label><input type="radio" value="webPublishing">웹 퍼블리싱</label>
+						</li>
+						<li>
+							<label><input type="radio" value="app">웹 어플리케이션 개발</label>
+						</li>
+						<li>
+							<label><input type="radio" value="environment">개발 환경 개선</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>지원 동기</legend>
+					<textarea cols="60" rows="5" id="comment" placeholder="본사 지원 동기를 간략히 써 주세요"></textarea>
+				</fieldset>
+				<!--
+					<input>으로 버튼 만들 때: value 속성으로 버튼 이름 지정
+					<button>으로 버튼 만들 때: 텍스트로 버튼 이름 지정
+				-->
+				<input type="submit" value="접수하기">
+				<button type="reset">다시 쓰기</button>
+			</form>
+		</div>
+  </body>
+</html>
