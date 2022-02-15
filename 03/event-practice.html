@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+	<title>이벤트 페이지</title>
+</head>
+<body>
+    <!--이미지 맵에 사용할 이미지 삽입하기-->
+    <!--img 태그, 속성 src(이미지 경로), alt(이미지 설명 대체 텍스트), usemap(사용할 map 이름 지정)-->
+    <img src="images/event.jpg" alt="신간 안내" usemap="#eventMap">
+    <!--map태그, 속성 name(map 이름)-->
+    <!--
+        <map name="맵 이름">
+            <area>
+            <area>
+            ...
+        </map>
+        이미지 맵 지정하기
+        -> 하나의 이미지에 여러 개의 링크 걸기, 위치에 따라 다른 링크 
+    -->
+    <map name="eventMap">
+        <!--이미지 맵 좌표 알아내기
+            그림판->해당 이미지 열기->마우스 포인터로 선택->하단에서 좌표 확인
+        -->
+
+        <!--이미지 맵 좌푯값 적용-원형-->
+        <area shape="circle" coords="328, 240, 55" href="http://www.easyspub.co.kr/20_Menu/BookList/EDU"
+        alt="시간 소개 페이지로 가기" target="_blank">
+
+        <!--이미지 맵 좌표-사각-->
+        <area shpae="rect" coords="43, 770, 690, 1170" href="http://www.easyspub.co.kr/12_Menu/BoardView/C200/123/EDU"
+        alt="본문 PDF 다운로드 페이지로 가기" target="_blank">
+    </map>
+</body>
+</html>
